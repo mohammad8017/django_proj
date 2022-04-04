@@ -1,0 +1,29 @@
+1. cretae project:                   django-admin startproject test_proj
+
+2. create app:                       django-admin startapp test_api
+
+3. set database:                     python manage.py migrate
+
+4. add "rest_framework" and name of app to "INSTALLED_APPS" in setting.py
+
+5. create super user:                python manage.py createsuperuser
+
+6. create model in test_api/models.py
+
+7. after edit or create a model we need to migrate
+
+                                     python manage.py makemigrations
+                                     python manage.py migrate   
+
+8. register model to django know our model: in admin.py we register our model
+
+9. we should create serializer.py file in test_api folder to convert our model to JSON
+
+10. create view.py file in test_api folder to render the different heroes in JSON format
+
+11. add urls in main urls.py file in test_proj folder
+
+12. create urls.py in test_api folder
+
+Tutorial : https://medium.com/swlh/build-your-first-rest-api-with-django-rest-framework-e394e39a482c
+            
